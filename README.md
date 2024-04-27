@@ -41,9 +41,13 @@ Command Line Arguments: Defaults, # Comments
 Structurs directories : 
 
 Load files : /data
+
 Load gt.txt : /data/gt/mot_challenge/HT-train/1/gt/gt.txt
+
 Load seqinfo : /data/gt/mot_challenge/HT-train/1/seqinfo.ini
+
 Detect results : /data/trackers/mot_challenge/HT-train/1/data/1.txt
+
 HT-Train txt : /data/gt/mot_challenge/seqmaps/HT-train.txt
 
 
