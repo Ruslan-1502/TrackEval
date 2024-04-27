@@ -8,7 +8,9 @@ run_mot_challenge.py --USE_PARALLEL False --METRICS Hota --TRACKERS_TO_EVAL Lif_
 
 Command Line Arguments: Defaults, # Comments
     Eval arguments:
+    
         'USE_PARALLEL': False,
+        
         'NUM_PARALLEL_CORES': 8,
         'BREAK_ON_ERROR': True,
         'PRINT_RESULTS': True,
