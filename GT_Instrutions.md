@@ -27,3 +27,8 @@ All frame numbers, target IDs and bounding boxes are 1-based. Here is an example
 1, 8, 875.49, 399.98, 95.303, 233.93, -1, -1, -1, -1
 ...
 ```
+
+Mapping Frame Numbers: The frame number in tracking should correspond to the frame number in the ground truth.
+Handling Multiple Objects: If there are multiple objects in a frame, both the ground truth and tracking data should reflect this by having multiple entries (rows) for that frame, one for each object.
+
+
