@@ -1,10 +1,10 @@
 GT_Instrutions
 
 
-Формат данных
-Формат файла трекера должен быть таким же, как и основной файл истины, который представляет собой текстовый файл CSV, содержащий один экземпляр объекта в каждой строке. Каждая строка должна содержать 10 значений:
+Data Format
+The tracker file format should be the same as the ground truth file, which is a CSV text-file containing one object instance per line. Each line must contain 10 values:
 
-
+```
 <frame>,
 <id>,
 <bb_left>,
@@ -15,11 +15,15 @@ GT_Instrutions
 <x>,
 <y>,
 <z>
-Мировые координаты x,y,z игнорируются для 2D-задачи и могут быть заполнены значением -1. Аналогичным образом, ограничивающие рамки игнорируются в задаче 3D. Однако каждая строка по-прежнему должна содержать 10 значений.
+```
+  
+The world coordinates x,y,z are ignored for the 2D challenge and can be filled with -1. Similarly, the bounding boxes are ignored for the 3D challenge. However, each line is still required to contain 10 values.
 
-Все номера кадров, целевые идентификаторы и ограничивающие рамки отсчитываются от 1. Вот пример:
+All frame numbers, target IDs and bounding boxes are 1-based. Here is an example:
 
-1, 3, 794,27, 247,59, 71,245, 174,88, -1, -1, -1, -1
-1, 6, 1648,1, 119,61, 66,504, 163,24, -1, -1, -1, -1
-1, 8, 875,49, 399,98, 95,303, 233,93, -1, -1, -1, -1
+```
+1, 3, 794.27, 247.59, 71.245, 174.88, -1, -1, -1, -1
+1, 6, 1648.1, 119.61, 66.504, 163.24, -1, -1, -1, -1
+1, 8, 875.49, 399.98, 95.303, 233.93, -1, -1, -1, -1
 ...
+```
